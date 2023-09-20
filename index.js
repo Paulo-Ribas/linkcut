@@ -8,9 +8,7 @@ const router3 = require('./linkRedirect/generateLinkName')
 const router4 = require('./linkRedirect/generateUniqueURL')
 const router5 = require('./linkRedirect/generateUniqueURL_Name')
 const app = express()
-const { SitemapStream, streamToPromise } = require('sitemap')
-const { createGzip } = require('zlib')
-const { Readable } = require('stream')
+
 
 connection.authenticate().then(()=> console.log('connected')).catch(()=>{console.log('erro ao conectar')})
 app.set('view engine', 'ejs')
@@ -61,4 +59,4 @@ app.get('/:parte1?/:parte2?', (req , res) => {
 })
 
 
-app.listen(3334)
+app.listen(2222)
