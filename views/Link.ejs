@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="robots" content="nofollow">
+    <meta http-equiv="author" content="Paulo Ribas">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>Link</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/linkStyle.css">
+    <link rel="shortcut icon" href="../public/img/favIcone.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favIcone.png" type="image/x-icon">
+
+
+</head>
+<body>
+    <main>
+        <div class="container">
+            <input type="text" name="SeuLink" id="L" value="seu link: https://linkcut.com.br/<%if(numeration)%><%{%><%=numeration%><%}%><%if(bar)%><%{%><%=bar%><%}%><%=Link%>" readonly>
+            <button>copiar Link</button>
+        </div>
+        <div class="btn-container">
+            <button><a href="/">Gerar Outra Url Padrão</a></button>
+            <button><a href="/Urladvanced">Gerar Uma Nova Url Avançada</a></button>
+        </div>
+    </main>
+    <footer>
+        2021 © Linkcut - Encurtador de Link/Url - Paulo Ribas.
+    </footer>
+
+    <script src="./scripts/copy.js"></script> 
+    
+</body>
+</html>

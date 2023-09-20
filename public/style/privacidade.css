@@ -1,0 +1,15 @@
+.p_privacidade {
+    color: white;
+    font-size: 1.05em;
+    margin: 10px;
+    text-shadow: 0px 0px 5px #180131;
+}
+
+#privacidade_section {
+    padding: 0px 30px;
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 1450px;
+    text-align: center;
+}

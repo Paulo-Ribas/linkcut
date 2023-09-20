@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1480px;
+}
+ul {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+li{
+    list-style: none;
+    color: white;
+}
+
+body {
+    background-image: url(../img/fundo.png);
+    background-repeat: no-repeat;
+    background-color: #300362;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+  
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 5px 0px;
+}
+.hidden {
+    display: none;
+}
+h1 {
+    color: white;
+    font-size: 1.9em;
+    text-align: center;
+    margin-top: 15px;
+}
+h2 {
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 10px;
+}
+h3 {
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+.error {
+    color: orangered;
+    font-size: 1em;
+    text-align: center;
+    transform: translateY(5px);
+
+}
+h4 {
+    font-size: 1.7em;
+    color: rgb(8, 255, 0);
+    text-align: center;
+}
+
+.activate > a {
+    color: rgb(8, 255, 0)!important;
+}
+main {
+    height: 100vh;
+}
+.container-form {
+    width: 100%;
+    min-height: 256px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    max-width: 1250px;
+    margin: auto;
+    align-self: center;
+
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+form input {
+    width: 33%;
+    min-width: 400px;
+    background: none;
+    text-align: center;
+    border-radius: 30px;
+    outline: none;
+    border: 3px solid white;
+    color: white;
+    height: 45px;
+    margin: 10px 0px;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: serif;
+
+}
+form input[type='submit'] {
+    cursor: pointer;
+}
+form input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+i {
+    position: absolute;
+    right: calc(23% - 10px);
+    color: white;
+    font-size: 1.6em;
+    cursor: pointer;
+    padding: 10px;
+}
+
+li a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    padding: 2px;
+}
+
+.video-aula {
+    margin-top: -100px;
+    margin-bottom: 10px;
+}
+.video-aula p{
+    text-align: center;
+    font-size: 1.1em;
+    color: white;
+    padding: 0px 20px;
+    margin: 60px 0px;
+}
+
+.video-aula p a {
+    text-decoration: none;
+    color: rgb(8, 255, 0);
+}
+
+.video-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.video-container video {
+    width: 80%;
+    max-width: 1480px;
+    max-height: 600px;
+}
+
+form input[type='submit']:hover, i:hover {
+    color: rgb(8, 255, 0);
+    border-color: rgb(8, 255, 0);
+    
+
+}
+
+form input[type='url'], input[type='text'] {
+    transition-duration: 0.4s;
+    padding: 0px 1px;
+}
+
+
+form input[type='url']:focus {
+    width: 36%;
+    color: rgb(8, 255, 0);
+    border-color: rgb(8, 255, 0);
+}
+form input[type='url']:focus::placeholder {
+    color: rgb(8, 255, 0);
+}
+form input[type='text']::placeholder {
+    color: rgb(8, 255, 0);
+}
+form input[type='text']:focus {
+    width: 36%;
+    color: rgb(8, 255, 0);
+    border-color: rgb(8, 255, 0);
+}
+
+li a:hover {
+    color: rgb(8, 255, 0);
+
+}
+
+/* ----------ANIMAÇÕES-----------*/
+
+
+@keyframes centerToLeft {
+    from {
+        transform: translateX(0);
+       
+    }
+    to {
+        transform: translateX(-200%);
+        
+    }
+}
+
+@keyframes LeftToCenter  {
+    from {
+        transform: translateX(-200%);
+        
+    }
+    to {
+        transform: translateX(0);
+        
+    }
+}
+
+.center-left {
+    animation: centerToLeft;
+    animation-duration: 1.3s;
+    animation-fill-mode: forwards;
+
+}
+
+.left-center {
+    animation: LeftToCenter;
+    animation-duration: 1.3s;
+    animation-fill-mode: forwards;
+    
+}
+
+
+/* ------------- media screen ------------- */
+
+@media screen and (max-width: 880px) {
+    i {
+    position: initial;
+    color: white;
+    font-size: 1.6em;
+    cursor: pointer;
+    padding: 10px;
+}
+    form input[type='submit']:hover, i:hover {
+    color: rgb(8, 255, 0);
+    border-color: rgb(8, 255, 0);
+    
+
+}
+
+    form input[type='url'], input[type='text'] {
+    transition-duration: 0.4s;
+    padding: 0px 1px;
+}
+
+    form input[type='url']:focus {
+    width: 440px;
+    color: rgb(8, 255, 0);
+    border-color: rgb(8, 255, 0);
+}
+    form input[type='url']:focus::placeholder {
+    color: rgb(8, 255, 0);
+}
+    form input[type='text']::placeholder {
+    color: rgb(8, 255, 0);
+}
+    form input[type='text']:focus {
+    width: 440px;
+    color: rgb(8, 255, 0);
+    border-color: rgb(8, 255, 0);
+}
+
+
+}
+
+/* ------------- media screen 2 -------------- */
+
+@media screen and (max-width: 480px) {
+    .container-form {
+        min-width: 0px;
+    }
+    body {
+        background-size: unset;
+    }
+    form input {
+        width: 90%;
+        min-width: 0px;
+        margin: 10px 0px;
+    }
+    form input[type='submit']:hover, i:hover {
+    color: rgb(8, 255, 0);
+    border-color: rgb(8, 255, 0);
+
+}
+
+    form input[type='url'], input[type='text'] {
+    transition-duration: 0.4s;
+    padding: 0px 1px;
+}
+
+    form input[type='url']:focus {
+    width: 99%;
+    color: rgb(8, 255, 0);
+    border-color: rgb(8, 255, 0);
+}
+    form input[type='url']:focus::placeholder {
+    color: rgb(8, 255, 0);
+}
+    form input[type='text']::placeholder {
+    color: rgb(8, 255, 0);
+}
+    form input[type='text']:focus {
+    width: 99%;
+    color: rgb(8, 255, 0);
+    border-color: rgb(8, 255, 0);
+}
+   
+    
+}
+
+/* ------------- media screen 3 -------------- */
+
+@media screen and (min-width: 1480px) {
+    .container-form {
+    width: 100%;
+    min-height: 256px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    max-width: 1450px;
+    margin: auto;
+    align-self: center;
+
+}
+h1 {
+    color: white;
+    font-size: 2.2em;
+    text-align: center;
+    margin-top: 30px;
+}
+h2 {
+    color: white;
+    font-size: 1.6em;
+    text-align: center;
+    margin-top: 10px;
+}
+h3 {
+    font-size: 1.1em;
+}
+.error {
+    color: orangered;
+    font-size: 1.1em;
+    text-align: center;
+    transform: translateY(5px);
+
+}
+form input {
+    width: 33%;
+    min-width: 400px;
+    background: none;
+    text-align: center;
+    border-radius: 30px;
+    outline: none;
+    border: 3px solid white;
+    color: white;
+    height: 45px;
+    margin: 10px 0px;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: serif;
+
+}
+
+    
+}
