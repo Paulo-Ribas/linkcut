@@ -36,8 +36,8 @@ button {
 }
 
 button:hover {
-    color: rgb(8, 255, 0);
-    border-color: rgb(8, 255, 0);
+    color: #09ff77;
+    border-color: #09ff77;
 }
 
 @media screen and (max-width: 480px) {

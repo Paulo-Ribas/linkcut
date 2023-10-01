@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
+}
+
+@font-face {
+    font-family: lnknut;
+    src: url('../fonts/InknutAntiqua-Medium.ttf');
 }
 
 header {
@@ -32,7 +38,7 @@ li{
 body {
     background-image: url(../img/fundo.png);
     background-repeat: no-repeat;
-    background-color: #300362;
+    background-color: #000210;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -78,15 +84,15 @@ h3 {
 }
 h4 {
     font-size: 1.7em;
-    color: rgb(8, 255, 0);
+    color: #09ff77;
     text-align: center;
 }
 
 .activate > a {
-    color: rgb(8, 255, 0)!important;
+    color: #09ff77!important;
 }
 main {
-    height: 100vh;
+    height: calc(100vh - 90px);
 }
 .container-form {
     width: 100%;
@@ -163,7 +169,7 @@ li a {
 
 .video-aula p a {
     text-decoration: none;
-    color: rgb(8, 255, 0);
+    color: #09ff77;
 }
 
 .video-container {
@@ -180,8 +186,8 @@ li a {
 }
 
 form input[type='submit']:hover, i:hover {
-    color: rgb(8, 255, 0);
-    border-color: rgb(8, 255, 0);
+    color: #09ff77;
+    border-color: #09ff77;
     
 
 }
@@ -194,23 +200,23 @@ form input[type='url'], input[type='text'] {
 
 form input[type='url']:focus {
     width: 36%;
-    color: rgb(8, 255, 0);
-    border-color: rgb(8, 255, 0);
+    color: #09ff77;
+    border-color: #09ff77;
 }
 form input[type='url']:focus::placeholder {
-    color: rgb(8, 255, 0);
+    color: #09ff77;
 }
 form input[type='text']::placeholder {
-    color: rgb(8, 255, 0);
+    color: #09ff77;
 }
 form input[type='text']:focus {
     width: 36%;
-    color: rgb(8, 255, 0);
-    border-color: rgb(8, 255, 0);
+    color: #09ff77;
+    border-color: #09ff77;
 }
 
 li a:hover {
-    color: rgb(8, 255, 0);
+    color: #09ff77;
 
 }
 
@@ -265,8 +271,8 @@ li a:hover {
     padding: 10px;
 }
     form input[type='submit']:hover, i:hover {
-    color: rgb(8, 255, 0);
-    border-color: rgb(8, 255, 0);
+    color: #09ff77;
+    border-color:#09ff77;
     
 
 }
@@ -278,19 +284,19 @@ li a:hover {
 
     form input[type='url']:focus {
     width: 440px;
-    color: rgb(8, 255, 0);
-    border-color: rgb(8, 255, 0);
+    color: #09ff77;
+    border-color: #09ff77;
 }
     form input[type='url']:focus::placeholder {
-    color: rgb(8, 255, 0);
+    color: #09ff77;
 }
     form input[type='text']::placeholder {
-    color: rgb(8, 255, 0);
+    color: #09ff77;
 }
     form input[type='text']:focus {
     width: 440px;
-    color: rgb(8, 255, 0);
-    border-color: rgb(8, 255, 0);
+    color: #09ff77;
+    border-color: #09ff77;
 }
 
 
