@@ -22,6 +22,7 @@ nav {
     align-items: center;
     justify-content: center;
     max-width: 1480px;
+    margin: auto;
 }
 ul {
     width: 70%;
