@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: http://linkcut.fun/sitemap.xml
